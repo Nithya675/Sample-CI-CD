@@ -1,0 +1,23 @@
+# backend steps required
+  clone/get code
+  cd backend
+- check whether python is installed in your environment
+- then set python virtual environment
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
+- Install dependencies 
+  pip install -r ../requirements.txt (as it is in root user)
+- Install mongod in your environment 
+- Set environment variables
+- Check whether mongo is running 
+- And run the backend
+  uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+  #frontend steps
+     cd frontend
+  - check whether npm is installed in your environment
+  -  if not npm install
+  - else npm -v
+  - set environment variables
+  - start the frontend
+   npm start 
