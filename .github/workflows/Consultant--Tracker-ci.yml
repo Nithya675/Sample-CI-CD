@@ -1,0 +1,42 @@
+name: Consultant--Tracker-ci
+on:
+  workflow_dispatch:
+  
+# Common environment variables for the app
+#env:
+  #MONGODB_URL: mongodb://localhost:27017
+  #CORS_ORIGINS: http://localhost:3000
+  #REACT_APP_API_URL: http://localhost:8000/api
+
+jobs:
+  backend:
+    name: backend-check
+    runs-on: ubuntu-latest    #(self-hosted, linux)
+
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure MongoDB is running 
+        run: |
+          if pgrep mongod > /dev/null; then
+             echo "mongod is already running."
+           else
+             echo "Starting mongod service..."
+             sudo systemctl start mongod
+           fi
+           
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          
+       
+        
+     
+
+  
