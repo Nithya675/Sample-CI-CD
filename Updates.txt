@@ -1,0 +1,10 @@
+Feedback by market team:
+- Everything looks good.
+- Need to add tab/cloumn which gives percentage match when compared uploaded resume with job description.
+- And in recruiter tab/ admin tab they said to add tab to store the data of the recruiter(who posts original jobs) like name, email, contact number and company name.
+
+The things need to be updated:
+- To add the drop down to the visa row in the job description to choose multiple types.
+- Tech stack - comapre with consultant tech stack.
+- the names like consultant and recruiter and admin are in caps need to be modified.
+-
