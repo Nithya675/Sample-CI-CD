@@ -7,4 +7,4 @@ The things need to be updated:
 - To add the drop down to the visa row in the job description to choose multiple types.
 - Tech stack - comapre with consultant tech stack.
 - the names like consultant and recruiter and admin are in caps need to be modified.
--
+- After Registartion they should get the email respond.
